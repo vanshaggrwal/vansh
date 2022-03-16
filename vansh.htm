@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table border="1px">
+      <tr>
+        <td colspan="2" onmouseover="change1();" id="one">
+          You
+        </td>
+        <td colspan="2" onmouseout="change2();" id="two">
+          are
+        </td>
+        <td colspan="2" onmousemove="change3()" id="three">
+          G29
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <button type="button" name="button" ondblclick="change4();" id="four">Chitkara</button>
+        </td>
+        <td colspan="3">
+          <button type="button" name="button" onclick="change5();" id="five">University</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <button type="button" name="button" onclick="change6();">Button</button>
+        </td>
+        <td colspan="3">
+          <iframe src="https://giphy.com/embed/NVBR6cLvUjV9C" width="480" height="480" frameBorder="0" allowFullScreen style="opacity:0" id="img123"></iframe>
+      </tr>
+    </table>
+    <script type="text/javascript">
+    function change1(){
+      document.getElementById('one').style.backgroundColor="black";
+      document.getElementById('one').style.color='red';
+
+    }
+    function change2(){
+      document.getElementById('two').style.backgroundColor="black";
+      document.getElementById('two').style.color='green';
+    }
+    function change3(){
+      document.getElementById('three').innerHTML = "G28"
+    }
+      function change4(){
+        document.getElementById('four').innerHTML = "Chitkara University"
+      }
+      function change5(){
+        document.getElementById('five').innerHTML = "Chitkara"
+      }
+      function change6(){
+        var giffy = document.getElementById('img123');
+        if (giffy.style.opacity.match("0")) {
+            giffy.style.opacity = "1";
+        }
+        else {
+            giffy.style.opacity = "0";
+
+        }
+        
+      }
+    </script>
+  </body>
+</html>
